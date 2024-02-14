@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 8157603883297572372}
   - component: {fileID: 285203136064643136}
   - component: {fileID: 7631973316525032977}
+  - component: {fileID: 8266220169954495648}
   m_Layer: 0
   m_Name: BombPrefab 1
   m_TagString: Bullet
@@ -179,6 +180,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 2382046855575189189, guid: 5366069f5d30c1e4dac9d9c992d170ae, type: 3}
+  explosionInpact: {fileID: 8266220169954495648}
+--- !u!135 &8266220169954495648
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063744917920220148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5927296933921349824
 GameObject:
   m_ObjectHideFlags: 0

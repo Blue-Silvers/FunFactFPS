@@ -40,25 +40,37 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float damageUp2;
     [SerializeField] private bool upgrade3 = false;
     [SerializeField] private float damageUp3;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody>();
         ammoBar.SetMaxHealth(maxAmmo);
         actualAmmo = maxAmmo;
+        shoot = true;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if(actualAmmo > 0)
+            if(actualAmmo > 0 && shoot == true)
             {
+                shoot = false;
+                animator.SetTrigger("Shoot");
                 actualAmmo -= 1;
                 ammoBar.SetHealth(actualAmmo);
                 var bullet = Instantiate(bulletPrefab, rocketSpawnPoint.position, rocketSpawnPoint.rotation);
                 bullet.GetComponent<Rigidbody>().velocity = rocketSpawnPoint.forward * bulletSpeed;
                 rigidbody.AddForce(transform.forward * - _backstabStrength, ForceMode.Impulse);
+                if(actualAmmo > 0)
+                {
+                    animator.SetBool("Ammo", true);
+                }
+                else
+                {
+                    animator.SetBool("Ammo", false);
+                }
             }
 
         }
@@ -95,6 +107,17 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 desireRotation = new Vector3(0, input.x * horizontalSpeed * Time.deltaTime, 0);
         rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(desireRotation));
+
+        if (Input.GetKey(KeyCode.B))
+        {
+            Vector3 desireRotationB = new Vector3(-1 * horizontalSpeed * Time.deltaTime, 0, 0);
+            rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(desireRotationB));
+        }
+        if (Input.GetKey(KeyCode.V))
+        {
+            Vector3 desireRotationB = new Vector3(1 * horizontalSpeed * Time.deltaTime, 0, 0);
+            rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(desireRotationB));
+        }
 
         Vector3 movement = new Vector3(transform.forward.x * input.y * speed * Time.deltaTime, 0, transform.forward.z * input.y * speed * Time.deltaTime);
         rigidbody.MovePosition(transform.position + movement);
@@ -137,6 +160,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         ammoBar.SetHealth(actualAmmo);
+    }
+
+    public void CanShoot()
+    {
+        shoot = true;
     }
 
     public void Upgrade()
