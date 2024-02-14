@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] Camera cam;
     [SerializeField] int fovValue;
+    int aiming = 0;
 
     [SerializeField] float maxLife;
     [SerializeField] int maxAmmo, actualAmmo;
@@ -52,6 +53,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            animator.SetBool("Aiming", true);
+            aiming = 1;
+        }
+        else if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            animator.SetBool("Aiming", false);
+            aiming = 2;
+        }
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if(actualAmmo > 0 && shoot == true)
@@ -123,22 +135,38 @@ public class PlayerMovement : MonoBehaviour
         rigidbody.MovePosition(transform.position + movement);
 
 
-        if (input.sqrMagnitude != 0)
+        if (aiming == 1)
         {
-            if (isRunning == true)
+            cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue - fovValue * 30 / 100, 2f);
+        }
+        else if (aiming == 2)
+        {
+            cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue, 2f);
+            if (cam.fieldOfView == fovValue)
             {
-                cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue + fovValue * 20 / 100, 0.5f);
-            }
-            else
-            {
-                cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue + fovValue * 10 / 100, 0.5f);
+                aiming = 0;
             }
         }
         else
         {
-            cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue, 0.5f);
+            if (input.sqrMagnitude != 0)
+            {
+                animator.SetFloat("Speed", speed);
+                if (isRunning == true)
+                {
+                    cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue + fovValue * 20 / 100, 0.5f);
+                }
+                else
+                {
+                    cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue + fovValue * 10 / 100, 0.5f);
+                }
+            }
+            else
+            {
+                animator.SetFloat("Speed", 0);
+                cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue, 0.5f);
+            }
         }
-
     }
 
     private void OnCollisionEnter(Collision collision)
