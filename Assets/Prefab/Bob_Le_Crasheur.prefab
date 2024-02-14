@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4061243037164836512}
   - component: {fileID: 7731502153033236057}
   - component: {fileID: 5471539720631057775}
+  - component: {fileID: 6886012257970041575}
   m_Layer: 0
   m_Name: Bob_Le_Crasheur
   m_TagString: Untagged
@@ -170,3 +171,17 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6886012257970041575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3663361547137777872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71215e6c0dbd4444b1a7b063c51675e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedRotation: 0.2
+  speedMovement: 20

@@ -145,6 +145,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &90188662
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -46.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -49.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1 &94294496
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +547,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428303156}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &474680470
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -59
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1001 &647717875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -707,6 +821,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &711237304
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -47.268307
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.84082
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1 &742659869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1206,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901857662}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &910556911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.980003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 28.360893
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1 &924725072
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1368,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &945432513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.880005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -48.5391
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1903,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200627185}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1250678591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.449593
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -39.331604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1001 &1270499900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1850,6 +2192,120 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+--- !u!1001 &1575040929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+--- !u!1001 &1663517128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.530409
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 71.807495
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1 &1728358744 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3145867231354361844, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
@@ -1860,6 +2316,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2133211669623444213, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
   m_PrefabInstance: {fileID: 1270499900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1778869282
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -54.54959
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 37.56839
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1 &1816689804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +2478,120 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1827495988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.039097
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+--- !u!1001 &1874189264
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.811695
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 46.079926
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!114 &1894834342 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7015427724477922207, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
@@ -2007,6 +2634,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 94294500}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1001 &2064898466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3663361547137777872, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_Name
+      value: Bob_Le_Crasheur (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.16831
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -65.05917
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5058481466754466684, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
 --- !u!1001 &2123400646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2155,6 +2839,18 @@ SceneRoots:
   - {fileID: 924725076}
   - {fileID: 1120371863}
   - {fileID: 6100960537304332844}
+  - {fileID: 1827495988}
+  - {fileID: 90188662}
+  - {fileID: 474680470}
   - {fileID: 1478411236}
+  - {fileID: 1575040929}
+  - {fileID: 945432513}
+  - {fileID: 910556911}
   - {fileID: 647717875}
+  - {fileID: 1874189264}
+  - {fileID: 2064898466}
+  - {fileID: 711237304}
   - {fileID: 203776928}
+  - {fileID: 1663517128}
+  - {fileID: 1250678591}
+  - {fileID: 1778869282}
