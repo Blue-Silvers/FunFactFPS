@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     private bool jump = false, isGrounded = true;
     [SerializeField] private LayerMask groundLayers;
     [SerializeField] private float _jumpStrength = 8f;
+    [SerializeField] private float _backstabStrength = 8f;
 
     [SerializeField] Camera cam;
     [SerializeField] int fovValue;
@@ -57,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
                 ammoBar.SetHealth(actualAmmo);
                 var bullet = Instantiate(bulletPrefab, rocketSpawnPoint.position, rocketSpawnPoint.rotation);
                 bullet.GetComponent<Rigidbody>().velocity = rocketSpawnPoint.forward * bulletSpeed;
+                rigidbody.AddForce(transform.forward * - _backstabStrength, ForceMode.Impulse);
             }
 
         }
