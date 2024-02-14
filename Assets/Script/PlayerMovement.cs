@@ -55,12 +55,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse1))
         {
-            animator.SetBool("Aiming", true);
             aiming = 1;
         }
         else if (Input.GetKeyUp(KeyCode.Mouse1))
         {
-            animator.SetBool("Aiming", false);
             aiming = 2;
         }
 
@@ -151,7 +149,6 @@ public class PlayerMovement : MonoBehaviour
         {
             if (input.sqrMagnitude != 0)
             {
-                animator.SetFloat("Speed", speed);
                 if (isRunning == true)
                 {
                     cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue + fovValue * 20 / 100, 0.5f);
@@ -163,7 +160,6 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                animator.SetFloat("Speed", 0);
                 cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, fovValue, 0.5f);
             }
         }

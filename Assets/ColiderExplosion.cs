@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class ColiderExplosion : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject explosionParticle;
+    [SerializeField] SphereCollider explosionInpact;
+    bool explosion = false;
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if(collision.gameObject.tag != "Player")
+        {
+            Invoke("Explosion", 2f);
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void Explosion()
     {
-        
+        Instantiate(explosionParticle, gameObject.transform.position, gameObject.transform.rotation);
+        explosionInpact.enabled = true;
+        explosion = true;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (explosion)
+        {
+            if (other.gameObject.tag != "Player")
+            {
+                Instantiate(explosionParticle, other.transform.position, other.transform.rotation);
+                Destroy(other.gameObject);
+            }
+            Instantiate(explosionParticle, gameObject.transform.position, gameObject.transform.rotation);
+            Destroy(gameObject);
+        }
+
     }
 }

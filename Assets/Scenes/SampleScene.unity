@@ -1136,6 +1136,9 @@ GameObject:
   - component: {fileID: 1120371862}
   - component: {fileID: 1120371861}
   - component: {fileID: 1120371860}
+  - component: {fileID: 1120371865}
+  - component: {fileID: 1120371864}
+  - component: {fileID: 1120371866}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -1229,6 +1232,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1120371864
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120371859}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1120371865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120371859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035691fe5ebd743498e3dacc5909a07d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionParticle: {fileID: 2382046855575189189, guid: 5366069f5d30c1e4dac9d9c992d170ae, type: 3}
+  explosionInpact: {fileID: 1120371864}
+--- !u!54 &1120371866
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120371859}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1185122715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,6 +1682,7 @@ GameObject:
   - component: {fileID: 1317657335}
   - component: {fileID: 1317657334}
   - component: {fileID: 1317657339}
+  - component: {fileID: 1317657340}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -1749,6 +1815,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035691fe5ebd743498e3dacc5909a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionParticle: {fileID: 2382046855575189189, guid: 5366069f5d30c1e4dac9d9c992d170ae, type: 3}
+  explosionInpact: {fileID: 1317657340}
+--- !u!135 &1317657340
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317657333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1358767025 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1971543797163756151, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
