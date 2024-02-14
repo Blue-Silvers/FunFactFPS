@@ -9,8 +9,9 @@ public class ColiderExplosion : MonoBehaviour
     bool explosion = false;
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag != "Player")
+        if(collision.gameObject.tag == "Bullet")
         {
+            transform.gameObject.tag = "Bullet";
             Invoke("Explosion", 2f);
         }
 
