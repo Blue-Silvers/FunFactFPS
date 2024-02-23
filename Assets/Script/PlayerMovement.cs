@@ -119,8 +119,6 @@ public class PlayerMovement : MonoBehaviour
             jump = false;
         }
 
-
-        print(input.x);
         Vector3 Mmovement = new Vector3(transform.right.x * input.x * speed * Time.deltaTime, 0, transform.right.z * input.x * speed * Time.deltaTime);
         Vector3 movement = new Vector3(transform.forward.x * input.y * speed * Time.deltaTime, 0, transform.forward.z * input.y * speed * Time.deltaTime);
         rigidbody.MovePosition(transform.position + movement + Mmovement);
