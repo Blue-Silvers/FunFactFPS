@@ -7,6 +7,16 @@ public class PauseMenu : MonoBehaviour
     private static bool gameIsPaused = false;
 
     [SerializeField] GameObject pauseMenuUI;
+    public static PauseMenu pauseInstance;
+
+    void Awake()
+    {
+        if (pauseInstance != null)
+        {
+            return;
+        }
+        pauseInstance = this;
+    }
 
     void Update()
     {

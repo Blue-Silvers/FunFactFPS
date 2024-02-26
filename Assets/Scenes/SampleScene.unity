@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1874166158}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &365489199
@@ -2147,6 +2147,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 8898745700754540189, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898745700754540189, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
+      propertyPath: m_Color.g
+      value: 0.49056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 8898745700754540189, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49056602
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6368516209790685031, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
@@ -2965,6 +2977,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885530ce7abaf824c9545c494e595819, type: 3}
+--- !u!1 &1874166158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3707339604939023013, guid: dcb12a5093d999d4db03db48174e0d93, type: 3}
+  m_PrefabInstance: {fileID: 1270499900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1874189264
 PrefabInstance:
   m_ObjectHideFlags: 0

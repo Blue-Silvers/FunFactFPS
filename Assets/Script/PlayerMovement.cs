@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float damageUp2;
     [SerializeField] private bool upgrade3 = false;
     [SerializeField] private float damageUp3;
+    private PauseMenu pause;
 
     private void Start()
     {
@@ -56,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+
         if (Input.GetKey(KeyCode.Mouse1))
         {
             aiming = 1;
