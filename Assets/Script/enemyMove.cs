@@ -19,34 +19,36 @@ public class enemyMove : MonoBehaviour
     }
     void Update()
     {
-
-        if (doRotate)
+        if (Time.timeScale == 1)
         {
-            transform.rotation = transform.rotation * Quaternion.Euler(0, speedRotation, 0);
-
-        }
-        else
-        {
-            rdRotateTime = Random.Range(0, 10000);
-            if (rdRotateTime < 3)
+            if (doRotate)
             {
-                Invoke("Rotating", (float)rdRotateTime);
-                doRotate = true;
+                transform.rotation = transform.rotation * Quaternion.Euler(0, speedRotation, 0);
+
             }
-        }
-
-        if (doMoove)
-        {
-            Vector3 movement = new Vector3(transform.forward.x * speedMovement * Time.deltaTime, 0, transform.forward.z * speedMovement * Time.deltaTime);
-            rigidbody.MovePosition(transform.position + movement);
-        }
-        else
-        {
-            rdMoove = Random.Range(0, 1000);
-            if (rdMoove < 7)
+            else
             {
-                Invoke("Mooving", (float)rdMoove);
-                doMoove = true;
+                rdRotateTime = Random.Range(0, 10000);
+                if (rdRotateTime < 3)
+                {
+                    Invoke("Rotating", (float)rdRotateTime);
+                    doRotate = true;
+                }
+            }
+
+            if (doMoove)
+            {
+                Vector3 movement = new Vector3(transform.forward.x * speedMovement * Time.deltaTime, 0, transform.forward.z * speedMovement * Time.deltaTime);
+                rigidbody.MovePosition(transform.position + movement);
+            }
+            else
+            {
+                rdMoove = Random.Range(0, 1000);
+                if (rdMoove < 7)
+                {
+                    Invoke("Mooving", (float)rdMoove);
+                    doMoove = true;
+                }
             }
         }
     }

@@ -669,6 +669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1627323748167231251, guid: b243e7f62913ee641a03623e4971202c, type: 3}
+      propertyPath: m_TagString
+      value: GameManager
+      objectReference: {fileID: 0}
     - target: {fileID: 1913979381519842361, guid: b243e7f62913ee641a03623e4971202c, type: 3}
       propertyPath: pauseMenuUI
       value: 

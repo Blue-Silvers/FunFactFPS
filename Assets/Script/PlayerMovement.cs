@@ -44,7 +44,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float damageUp2;
     [SerializeField] private bool upgrade3 = false;
     [SerializeField] private float damageUp3;
-    private PauseMenu pause;
+
+
 
     private void Start()
     {
@@ -57,61 +58,64 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-
-        if (Input.GetKey(KeyCode.Mouse1))
+        if(Time.timeScale == 1)
         {
-            aiming = 1;
-        }
-        else if (Input.GetKeyUp(KeyCode.Mouse1))
-        {
-            aiming = 2;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if(actualAmmo > 0 && shoot == true)
+            if (Input.GetKey(KeyCode.Mouse1))
             {
-                shoot = false;
-                animator.SetTrigger("Shoot");
-                actualAmmo -= 1;
-                ammoBar.SetHealth(actualAmmo);
-                var bullet = Instantiate(bulletPrefab, rocketSpawnPoint.position, rocketSpawnPoint.rotation);
-                bullet.GetComponent<Rigidbody>().velocity = rocketSpawnPoint.forward * bulletSpeed;
-                rigidbody.AddForce(cam.transform.forward * - _backstabStrength, ForceMode.Impulse);
-                shaking.Shaker(cameraShakeValue.x, cameraShakeValue.y);
-                if(actualAmmo > 0)
+               aiming = 1;
+            }   
+            else if (Input.GetKeyUp(KeyCode.Mouse1))
+            {
+                aiming = 2;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                if(actualAmmo > 0 && shoot == true)
                 {
-                    animator.SetBool("Ammo", true);
-                }
-                else
-                {
-                    animator.SetBool("Ammo", false);
-                    shoot = true;
+                    shoot = false;
+                    animator.SetTrigger("Shoot");
+                    actualAmmo -= 1;
+                    ammoBar.SetHealth(actualAmmo);
+                    var bullet = Instantiate(bulletPrefab, rocketSpawnPoint.position, rocketSpawnPoint.rotation);
+                    bullet.GetComponent<Rigidbody>().velocity = rocketSpawnPoint.forward * bulletSpeed;
+                    rigidbody.AddForce(cam.transform.forward * - _backstabStrength, ForceMode.Impulse);
+                    shaking.Shaker(cameraShakeValue.x, cameraShakeValue.y);
+                    if(actualAmmo > 0)
+                    {
+                        animator.SetBool("Ammo", true);
+                    }
+                    else
+                    {
+                        animator.SetBool("Ammo", false);
+                        shoot = true;
+                    }
                 }
             }
+
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                speed = runSpeed;
+                isRunning = true;
+
+            }
+            else
+            {
+                speed = walkSpeed;
+                isRunning = false;
+            }
+
+            input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+
+            if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+            {
+                jump = true;
+                isGrounded = false;
+            }
         }
-
-
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            speed = runSpeed;
-            isRunning = true;
-
-        }
-        else
-        {
-            speed = walkSpeed;
-            isRunning = false;
-        }
-
-        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
-
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            jump = true;
-            isGrounded = false;
-        }
+        
     }
     void FixedUpdate()
     {

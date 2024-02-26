@@ -17,10 +17,13 @@ public class CameraShake : MonoBehaviour
     }
     void Update()
     {
-        turn.x += Input.GetAxis("Mouse X") * sensitivity;
-        turn.y += Input.GetAxis("Mouse Y") * sensitivity;
-        player.transform.localRotation = Quaternion.Euler(0, turn.x, 0);
-        transform.localRotation = Quaternion.Euler(-turn.y, 0, 0);
+        if (Time.timeScale == 1)
+        {
+            turn.x += Input.GetAxis("Mouse X") * sensitivity;
+            turn.y += Input.GetAxis("Mouse Y") * sensitivity;
+            player.transform.localRotation = Quaternion.Euler(0, turn.x, 0);
+            transform.localRotation = Quaternion.Euler(-turn.y, 0, 0);
+        }
     }
 
 
@@ -33,12 +36,15 @@ public class CameraShake : MonoBehaviour
 
         while (elapsed < duration)
         {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
+            if (Time.timeScale == 1)
+            {
+                float x = Random.Range(-1f, 1f) * magnitude;
+                float y = Random.Range(-1f, 1f) * magnitude;
 
-            transform.localPosition = new Vector3 (x, y, originalPos.z);
+                transform.localPosition = new Vector3(x, y, originalPos.z);
 
-            elapsed += Time.deltaTime;
+                elapsed += Time.deltaTime;
+            }
 
             yield return null;
         }
