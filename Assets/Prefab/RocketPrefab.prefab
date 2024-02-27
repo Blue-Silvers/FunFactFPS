@@ -75,9 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc26e11d7cb55445a5883daaba01c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 2382046855575189189, guid: 5366069f5d30c1e4dac9d9c992d170ae, type: 3}
+  explosionParticle: {fileID: 100012, guid: 3364c97de68d3a147af572d1c71c6455, type: 3}
   explosionInpact: {fileID: 2511856721584851111}
-  shaking: {fileID: 6968122001035306951, guid: a603af31bc7556a4aad04ff37d5099cd, type: 3}
 --- !u!135 &2511856721584851111
 SphereCollider:
   m_ObjectHideFlags: 0

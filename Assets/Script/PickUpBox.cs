@@ -16,7 +16,9 @@ public class PickUpBox : MonoBehaviour
     [SerializeField] int upgradePrice;
     [SerializeField] int healPrice;
     [SerializeField] int ammoPrice;
-    [SerializeField] TextMeshProUGUI MoneyTxt;
+    [SerializeField] TextMeshProUGUI MoneyTxt, BobsTxt;
+    float bobFontSizeStart;
+    float bobFontSizeEvolve;
     [SerializeField] int ammoCharge;
 
     [SerializeField] HealthBar healthBar;
@@ -27,6 +29,10 @@ public class PickUpBox : MonoBehaviour
     [SerializeField] TextMeshProUGUI nbUpgradeTxt;
     [SerializeField] GameObject upgradeButton, interactButton;
 
+    GameObject[] Bobs;
+    int nbOfBob;
+    int nbOfDeath;
+
     int RdEscape;
     private void Start()
     {
@@ -35,6 +41,12 @@ public class PickUpBox : MonoBehaviour
         actualLife = maxLife;
         healthBar.SetMaxHealth(maxLife);
         animator = GetComponent<Animator>();
+
+        Bobs = GameObject.FindGameObjectsWithTag("Bob");
+        nbOfBob = Bobs.Length;
+        nbOfDeath = Bobs.Length;
+        BobsTxt.text = nbOfBob.ToString();
+        bobFontSizeStart = BobsTxt.fontSize;
     }
 
     void Update()
@@ -45,6 +57,12 @@ public class PickUpBox : MonoBehaviour
             {
                 Resume();
             }
+        }
+
+        if(BobsTxt.fontSize != bobFontSizeStart)
+        {
+            BobsTxt.fontSize = Mathf.SmoothStep(BobsTxt.fontSize, bobFontSizeStart, 0.05f);
+            BobsTxt.color = new Color(Mathf.SmoothStep(BobsTxt.color.r, 1, 0.05f), Mathf.SmoothStep(BobsTxt.color.g, 1, 0.05f), Mathf.SmoothStep(BobsTxt.color.b, 1, 0.05f), 1f);
         }
     }
 
@@ -120,6 +138,21 @@ public class PickUpBox : MonoBehaviour
     void DontShowInteract()
     {
         interactButton.SetActive(false);
+    }
+
+    public void ActualisateNbOfBob()
+    {
+        Bobs = GameObject.FindGameObjectsWithTag("Bob");
+        nbOfBob = Bobs.Length;
+        if (nbOfBob < nbOfDeath)
+        {
+            nbOfDeath -= 1;
+            money += 10;
+            MoneyTxt.text = money.ToString();
+            BobsTxt.text = nbOfBob.ToString();
+            BobsTxt.fontSize = BobsTxt.fontSize + 30;
+            BobsTxt.color = Color.red;
+        }
     }
 
     //Shop

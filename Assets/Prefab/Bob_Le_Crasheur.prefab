@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6886012257970041575}
   m_Layer: 0
   m_Name: Bob_Le_Crasheur
-  m_TagString: Untagged
+  m_TagString: Bob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,8 +148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035691fe5ebd743498e3dacc5909a07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionParticle: {fileID: 2382046855575189189, guid: 5366069f5d30c1e4dac9d9c992d170ae, type: 3}
+  explosionParticle: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
   explosionInpact: {fileID: 5471539720631057775}
+  pickUpBox: {fileID: 0}
+  isAnEnemy: 1
 --- !u!135 &5471539720631057775
 SphereCollider:
   m_ObjectHideFlags: 0

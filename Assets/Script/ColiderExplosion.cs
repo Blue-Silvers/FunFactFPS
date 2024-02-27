@@ -8,6 +8,10 @@ public class ColiderExplosion : MonoBehaviour
     [SerializeField] SphereCollider explosionInpact;
     bool explosion = false;
     GameObject[] camera;
+    GameObject[] player;
+    [SerializeField]PickUpBox pickUpBox;
+    bool showScript = false;
+    [SerializeField] bool isAnEnemy;
     CameraShake shaking;
 
 
@@ -18,13 +22,23 @@ public class ColiderExplosion : MonoBehaviour
         {
             shaking = script.GetComponent<CameraShake>();
         }
+        player = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject script2 in player)
+        {
+            if (script2.GetComponent<PickUpBox>() == true)
+            {
+                showScript = true;
+                pickUpBox = script2.GetComponent<PickUpBox>();
+            }
+
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Bullet")
+        if(collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "BobBullet")
         {
-            transform.gameObject.tag = "Bullet";
+            transform.gameObject.tag = "BobBullet";
             Invoke("Explosion", 2f);
         }
 
@@ -51,6 +65,10 @@ public class ColiderExplosion : MonoBehaviour
             }
             Instantiate(explosionParticle, gameObject.transform.position, gameObject.transform.rotation);
             shaking.Shaker(0.3f, 0.5f);
+            if (showScript == true && isAnEnemy == true)
+            {
+                pickUpBox.ActualisateNbOfBob();
+            }
             Destroy(gameObject);
         }
 
