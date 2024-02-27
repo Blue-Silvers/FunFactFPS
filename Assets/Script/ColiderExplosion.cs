@@ -9,10 +9,12 @@ public class ColiderExplosion : MonoBehaviour
     bool explosion = false;
     GameObject[] camera;
     GameObject[] player;
+    GameObject thePlayer;
     [SerializeField]PickUpBox pickUpBox;
     bool showScript = false;
     [SerializeField] bool isAnEnemy;
     CameraShake shaking;
+    [SerializeField] GameObject timerTextPrefab;
 
 
     private void Start()
@@ -29,6 +31,7 @@ public class ColiderExplosion : MonoBehaviour
             {
                 showScript = true;
                 pickUpBox = script2.GetComponent<PickUpBox>();
+                thePlayer = script2 as GameObject;
             }
 
         }
@@ -39,11 +42,18 @@ public class ColiderExplosion : MonoBehaviour
         if(collision.gameObject.tag == "Bullet" || collision.gameObject.tag == "BobBullet")
         {
             transform.gameObject.tag = "BobBullet";
+
+            ShowFloatingText();
             Invoke("Explosion", 2f);
         }
 
     }
 
+    void ShowFloatingText()
+    {
+        var countdown = Instantiate(timerTextPrefab, transform.position + new Vector3(0, 1, 0), thePlayer.transform.rotation);
+        countdown.transform.position = transform.position + new Vector3(0, 1, 0);// recupere le game object vers le timer pour le repositionner sur ses co
+    }
 
     private void Explosion()
     {

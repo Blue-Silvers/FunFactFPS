@@ -152,6 +152,7 @@ MonoBehaviour:
   explosionInpact: {fileID: 5471539720631057775}
   pickUpBox: {fileID: 0}
   isAnEnemy: 1
+  timerTextPrefab: {fileID: 8897407988526771199, guid: 432fd72d2d935864c9c90be1d315e02d, type: 3}
 --- !u!135 &5471539720631057775
 SphereCollider:
   m_ObjectHideFlags: 0
