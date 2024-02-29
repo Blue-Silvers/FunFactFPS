@@ -53,6 +53,8 @@ public class ColiderExplosion : MonoBehaviour
     {
         var countdown = Instantiate(timerTextPrefab, transform.position + new Vector3(0, 1, 0), thePlayer.transform.rotation);
         countdown.transform.position = transform.position + new Vector3(0, 1, 0);// recupere le game object vers le timer pour le repositionner sur ses co
+        TimeToExplose timeToExplose = countdown.GetComponent<TimeToExplose>();
+        timeToExplose.AssigneGameObjectToFollow(gameObject);
     }
 
     private void Explosion()
