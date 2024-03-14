@@ -30,11 +30,7 @@ public class TimeToExplose : MonoBehaviour
     
     void Update()
     {
-        /*Vector3 direction = thePlayer.transform.position + new Vector3(180, 0, 0);
-        direction.Normalize();
-        float angle = 270 + Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(1, 1, 1) * (float)angle);*/
-        transform.LookAt( - thePlayer.transform.position);
+        transform.LookAt(thePlayer.transform, Vector3.up);
 
         if(blockToFollow != null)
         {

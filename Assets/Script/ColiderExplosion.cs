@@ -31,7 +31,7 @@ public class ColiderExplosion : MonoBehaviour
             {
                 showScript = true;
                 pickUpBox = script2.GetComponent<PickUpBox>();
-                thePlayer = script2 as GameObject;
+                thePlayer = script2;
             }
 
         }
