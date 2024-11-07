@@ -17,20 +17,31 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject settingsWindow, levelsWindow;
     [SerializeField] private EventSystem eventSystem;
     [SerializeField] private GameObject ngButton, settingsButton, lvlButton;
+
+    [Header("Background")]
+    [SerializeField] private GameObject[] background;
+
+    [Header("Input Manager (don't touch)")]
+    [SerializeField] private InputActionReference escapeM;
     private void Start()
     {
         Time.timeScale = 1;
         settingsWindow.SetActive(false);
         levelsWindow.SetActive(false);
+
+        int rdBackground = Random.Range(0, background.Length);
+        background[rdBackground].SetActive(true);
+        for (int i = 0; i < background.Length; i++)
+        {
+            if (background[i] != background[rdBackground])
+            {
+                background[i].SetActive(false);
+            }
+        }
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.JoystickButton1))
-        {
-            CloseSettingsButton();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseSettingsButton();
         }
@@ -87,4 +98,12 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    private void OnEnable()
+    {
+        escapeM.action.started += EscapeM;
+    }
+    private void EscapeM(InputAction.CallbackContext obj)
+    {
+        CloseSettingsButton();
+    }
 }
